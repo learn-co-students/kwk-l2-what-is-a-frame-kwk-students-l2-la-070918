@@ -6,12 +6,45 @@
   <body>
 
     <a-scene>
-      <a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>
+      a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>
       <a-torus-knot position="0 2.5 -5"radius-inner="1" radius-outer="2" color="yellow"></a-torus-knot>
       <a-plane position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" color="#7BC8A4"></a-plane>
       <a-cylinder position="1 0.75 -3" radius="0.25" height="1" color="#F88"></a-cylinder>
-      <a-sky color="#99f"></a-sky>
-    </a-scene>
+      <a-sky position = "3 -10 -7" color="pink" radius="10"></a-sky>
+      <a-sky src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg"></a-sky>
+    
+      <!--light source element -->
+       <a-entity light="type: ambient"></a-entity> 
+
+       <!--our camera aka user perspective element -->
+       <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> 
+      <!--HUMAN-->
+      <a-sky color="pink"></a-sky>
+      <!--head-->
+      <a-sphere radius="3" color="#ffe6b3" position="0 10 0"></a-sphere>
+      <!--hat-->
+      <a-cylinder position="0 12.54 -0.1" radius="3.5" color="#ccffff" height="1.5" rotation="0 0 0"></a-cylinder>
+      <a-cylinder position="0 13.4 -0.1" radius="2" color="#ccffff" height="3" rotation="0 0 0"></a-cylinder>
+        <!--ribbon-->
+      <a-cylinder position="0 13.5 -0.1" radius="2.2" color="red" height="1" rotation="0 0 0"></a-cylinder>
+      <!--eyes and mouth-->
+      <a-sphere radius="0.5" color="#604020" position="-1.19 10.49 2.739"></a-sphere>
+      <a-sphere radius="0.5" color="#604020" position="1.19 10.49 2.739"></a-sphere>
+      <a-sphere radius="0.8" color="#ff704d" position="0 9.058 2.541"></a-sphere>
+      <!--body-->
+      <a-box position="0 2.5 0" rotation="0 0 0" color="#4CC3D9" depth="3" height="15" width="4"></a-box>
+      <!--arms-->
+      <a-box position="3.5 0.5 1" rotation="0 0 0" color="#4CC3D9" depth="3" height="12" width="3"></a-box>
+      <a-box position="-3.5 0.5 1" rotation="0 0 0" color="#4CC3D9" depth="3" height="12" width="3"></a-box>
+      <!--legs-->
+      <a-box position="-1 -10 1" rotation="0 0 0" color="#000000" depth="1.7" height="10" width="1.5"></a-box>
+      <a-box position="1 -10 1" rotation="0 0 0" color="#000000" depth="1.7" height="10" width="1.5"></a-box>
+      <!--shoes-->
+      <a-box position="-1 -14.6 1.157" rotation="0 0 0" color="white" depth="2" height="2" width="2"></a-box>
+      <a-box position="1.084 -14.6 1.157" rotation="0 0 0" color="white" depth="2" height="2" width="2"></a-box>
+      
+      </a-scene>
+    
 
   </body>
 
